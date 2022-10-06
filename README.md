@@ -3,6 +3,6 @@ A place where I'm saving my programming exercises and sharing them with my partn
 
 ## Folder Structure
 
-- `src`: the folder to maintain sources
+- `src`: the folder where sources are saved
 - `lib`: the folder to maintain dependencies
 - `bin`: the folder where compiled output files will be found
