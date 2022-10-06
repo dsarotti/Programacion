@@ -1,4 +1,5 @@
-## Dante Sarotti's Git
+# Dante Sarotti's Git
+A place where I'm saving my programming exercises and sharing them with my partners from the first day I started learning.
 
 ## Folder Structure
 
