@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Programacion_df1e0b29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ejercicios",
+            "request": "launch",
+            "mainClass": "Ejercicios",
+            "projectName": "Programacion_df1e0b29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fibonaci",
+            "request": "launch",
+            "mainClass": "Fibonaci",
+            "projectName": "Programacion_df1e0b29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "alumnos.Main",
+            "projectName": "Programacion_df1e0b29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "clases.Main",
+            "projectName": "Programacion_df1e0b29"
+        },
+        {
+            "type": "java",
+            "name": "Launch pruebas",
+            "request": "launch",
+            "mainClass": "clasesOld.pruebas",
+            "projectName": "Programacion_df1e0b29"
+        }
+    ]
+}
