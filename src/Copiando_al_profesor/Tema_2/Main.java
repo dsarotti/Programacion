@@ -10,8 +10,8 @@ class Main{
 
         Random random = new Random();
 
-        int aleatorio1;
-        int aleatorio2;
+        int aleatorio1 = random.nextInt();
+        int aleatorio2 = random.nextInt();
 
         System.out.println("El primer número es: " + aleatorio1 + ".");
         //System.out.println("El primer número es: %d.%n", aleatorio1);
@@ -22,7 +22,7 @@ class Main{
         Calendar cal = Calendar.getInstance();
         cal.get(Calendar.MONTH);
 
-        System.out.println("El número mayor entre (%s y %d) es %d.%n",aleatorio1, aleatorio2, max_aleat);
+        //System.out.println("El número mayor entre (%s y %d) es %d.%n",aleatorio1, aleatorio2, max_aleat);
 
     }
 }
