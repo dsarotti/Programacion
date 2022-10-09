@@ -1,4 +1,4 @@
-package Copiando_al_profesor.Tema_2;
+package copiando_al_profesor.Tema_2;
 import java.util.Calendar;
 import java.util.Random;
 class Main{
