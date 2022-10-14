@@ -10,14 +10,19 @@ class Palabras{
 
     public void rellenar(){
         Console c = System.console();
-        String temp = "init";
+        String temp="init";
         int i = 0;
-        while (!temp.isEmpty() || i < palabras.length)    
+        while (!temp.isEmpty() && !temp.isBlank() && (i < this.palabras.length))    
         {
             temp = c.readLine();
-            palabras[i]=temp;
+            if (!temp.isEmpty() && !temp.isBlank())
+            this.palabras[i]=temp;
             i++;
         }
+    }
+
+    public String[] getPalabras(){
+        return this.palabras;
     }
 
     public String getPos(int pos){
@@ -25,6 +30,6 @@ class Palabras{
     }
 
     public boolean sonIguales(int pos1, int pos2){
-        return palabras[pos1].equals(palabras[pos2]);
+        return this.palabras[pos1].equals(this.palabras[pos2]);
     }
 }
