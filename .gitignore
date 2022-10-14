@@ -9,8 +9,12 @@ bin/clases/MiClase.class
 bin/clasesOld/Cuadrado.class
 bin/clasesOld/FormaGeometrica.class
 bin/clasesOld/pruebas.class
+<<<<<<< HEAD
 bin/copiando_al_profesor/Tema_2/Main.class
 bin/cosecha_propia/tema2/ejercicio1/clase.class
 bin/copiando_al_profesor/Tema_2/Main.class
 bin/cosecha_propia/tema2/ejercicio1/Main.class
 bin/copiando_al_profesor/Tema_2/Main.class
+=======
+bin/*
+>>>>>>> a1c772ac515d02f02a82b1bd58f9e12aa4af1bfa
