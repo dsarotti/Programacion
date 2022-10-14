@@ -4,7 +4,7 @@ import java.io.Console;
     Tomando como base el código del ejercicio anterior, haz que el programa nos indique que palabra está antes lexicográficamente.*/
 public class Main {
     public static void main(String[] args) {
-        clase objeto = new clase();
+        Palabras objeto = new Palabras();
         objeto.setP1(pide());
         objeto.setP2(pide());
         comprobar(objeto);
@@ -16,14 +16,14 @@ public class Main {
         return c.readLine();
     }
 
-    public static void comprobar(clase obj){
+    public static void comprobar(Palabras obj){
         System.out.print("las cadenas ");
         if (!obj.sonIguales())
             System.out.print("no ");
         System.out.println("son iguales");
     }
 
-    public static void orden (clase obj){
+    public static void orden (Palabras obj){
         if (obj.getOrdenLexic()<0 )
             System.out.println(obj.getP1() + " va antes que " + obj.getP2());
         else    
