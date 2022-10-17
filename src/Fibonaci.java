@@ -5,7 +5,6 @@ public class Fibonaci{
         for (int i = 1;i < 9999;i = (n+i)){ 
             System.out.println(n);
             System.out.println(i);
-           
             n=(n+i);
         }
     }
