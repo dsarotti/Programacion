@@ -4,6 +4,8 @@ import java.io.Console;
 import java.util.Scanner;
  /* 
   * EJERCICIO EXTRA TERMINADO
+  * Instrucciones:  Utilizar primero el método rellenar() para crear la lista de palabras.
+  *                 Utilizar después el método ordenando() para ordenar la lista.
   */
   
 
@@ -37,17 +39,18 @@ public class Extra {
         String temp1,temp2;
         ArrayList<String> solucion = new ArrayList<>(this.palabras) ;//copia de la lista de palabras
         solucion.sort(null); //solucion de referencia con la que comparar
-        System.out.println("solucion: " + solucion);
+
         if (!this.palabras.equals(solucion)){
             System.out.println("Lista introducida: ");
             System.out.println(palabras);
-            System.out.println("ordenalas: ");
-            do {
+            System.out.println("Ordena la la lista. ");
+
+            do { //mientras el array y la solución no sean iguales
                 System.out.println("Indica dos posiciones para intercambiarlas: ");
                 int t1,t2;
-                System.out.println("Introduce el primer indice: ");
+                System.out.println("Introduce la primera posicion: ");
                 t1 = pideIndice();
-                System.out.println("Introduce el segundo indice: ");
+                System.out.println("Introduce la segunda posicion: ");
                 t2 = pideIndice();
 
                 //guardo temporalmente los datos de cada posición
@@ -55,16 +58,23 @@ public class Extra {
                 temp2 = this.palabras.get(t2);
 
                 //Escribo los datos de las posiciones cruzadas
+                System.out.println("Intercambiando los índices " + t1 + " y " + t2 );
                 this.palabras.set(t1, temp2);
                 this.palabras.set(t2, temp1);
                 System.out.println(this.palabras);
 
-            } while (!this.palabras.equals(solucion));
+            } while (!this.palabras.equals(solucion)); 
         }
         System.out.println("Lista ordenada: " + this.palabras);
     }
 
     public int pideIndice(){
+        /*Se pide un número y se comprueba que 
+        * Sea compatible con los índices del array
+        * Si las comprobaciones son correctas se devuelve el índice introducido
+        * Si no, se vuelve a pedir.
+        */
+        
         Scanner sc = new Scanner(System.in);
         int i;
         do {
