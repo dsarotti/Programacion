@@ -1,7 +1,7 @@
 package cosecha_propia.tema_2.ejercicio4;
 import java.io.Console;
 import java.util.Arrays;
-import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.*;
 
 /*  EJERCICIO TERMINADO
     Haz ahora que el programa permita introducir hasta 10 palabras y las almacene en un array de cadenas. 

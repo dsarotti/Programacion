@@ -1,5 +1,4 @@
 package cosecha_propia.tema_2.ejercicio3;
-import java.io.Console;
 import java.util.Arrays;
 /*  EJERCICIO TERMINADO
     Modifica el programa anterior para que ordene las palabras introducidas previamente por el usuario.
