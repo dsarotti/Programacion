@@ -1,8 +1,8 @@
-package cosecha_propia.tema_2.ejercicio5;
+package cosecha_propia.tema_2.ejercicio6;
 import java.io.Console;
-//EJERCICIO TERMINADO
-//Haz que el programa ponga el mayúsculas la primera letra de cada palabra.
-
+//EJERCICIO
+//Crea un método (estático) que reciba un array de palabras como entrada y 
+//devuelva una copia del array con las palabras ordenadas.
 class Palabras{
     String[] palabras = new String[10];
     public void rellenar(){
@@ -30,7 +30,7 @@ class Palabras{
     }
 
     public void mayus(){
-        int i =0;
+        int i = 0 ;
         for (String palabra : this.palabras) {
             if (palabra == null) 
                 break;
