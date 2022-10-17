@@ -2,12 +2,17 @@ package cosecha_propia.tema_2.EXTRA;
 import java.util.ArrayList;
 import java.io.Console;
 import java.util.Scanner;
+ /* 
+  * EJERCICIO EXTRA TERMINADO
+  */
+  
+
 public class Extra {
     ArrayList<String> palabras = new ArrayList<String>();
     public void rellenar(){
-    /*pide cadenas para guardar en cada posición del array
-      hasta pulsar Enter sin introducir nada.
-      no debe haber espacios ni mayusculas.*/
+    /* pide cadenas para guardar en cada posición del array
+     * hasta pulsar Enter sin introducir nada.
+     * no debe haber espacios ni mayusculas.*/
 
         Console c = System.console();
         String temp="init";
