@@ -1,3 +1,4 @@
+package old;
 import java.util.Scanner;
 public class E_scanner {
     public static void main() {

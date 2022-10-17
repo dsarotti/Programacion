@@ -1,3 +1,4 @@
+package old;
 import java.io.Console;
 import java.lang.Math;
 import java.util.Random;
