@@ -1,6 +1,4 @@
 package cosecha_propia.tema_2.ejercicio4;
-import java.io.Console;
-import java.util.Arrays;
 /*  EJERCICIO TERMINADO
     Haz ahora que el programa permita introducir hasta 10 palabras y las almacene en un array de cadenas. 
     El usuario podrá interrumpir la introducción de cadenas si pulsa ENTER sin escribir nada (cadena vacía).
