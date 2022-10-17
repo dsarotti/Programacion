@@ -2,12 +2,12 @@ package cosecha_propia.tema_2.EXTRA;
 import java.util.ArrayList;
 import java.io.Console;
 import java.util.Scanner;
+
  /* 
   * EJERCICIO EXTRA TERMINADO
   * Instrucciones:  Utilizar primero el método rellenar() para crear la lista de palabras.
   *                 Utilizar después el método ordenando() para ordenar la lista.
   */
-  
 
 public class Extra {
     ArrayList<String> palabras = new ArrayList<String>();
