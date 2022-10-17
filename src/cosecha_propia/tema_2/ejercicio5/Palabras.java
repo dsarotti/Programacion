@@ -1,8 +1,5 @@
-package cosecha_propia.tema_2.ejercicio4;
+package cosecha_propia.tema_2.ejercicio5;
 import java.io.Console;
-import java.util.Arrays;
-import org.apache.commons.collections4.ComparatorUtils;
-
 /*  EJERCICIO TERMINADO
     Haz ahora que el programa permita introducir hasta 10 palabras y las almacene en un array de cadenas. 
     El usuario podrá interrumpir la introducción de cadenas si pulsa ENTER sin escribir nada (cadena vacía).
@@ -26,10 +23,6 @@ class Palabras{
         }
     }
 
-    public void ordenar(){
-        Arrays.sort(this.palabras, ComparatorUtils.nullLowComparator(ComparatorUtils.NATURAL_COMPARATOR));
-    }
-
     public String[] getPalabras(){
         return this.palabras;
     }
@@ -38,7 +31,19 @@ class Palabras{
         return this.palabras[pos];
     }
 
-    public boolean sonIguales(int pos1, int pos2){
-        return this.palabras[pos1].equals(this.palabras[pos2]);
+    public void mayus(){
+        int i =0;
+        for (String palabra : this.palabras) {
+            if (palabra == null) 
+                break;
+            else {
+                char palabrach[] = palabra.toCharArray();
+                palabrach[0] = Character.toUpperCase(palabrach[0]);
+                palabra = new String(palabrach);
+                this.palabras[i] = palabra;
+                i++;
+            }
+                
+        }
     }
 }
