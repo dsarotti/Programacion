@@ -1,8 +1,8 @@
-package cosecha_propia.tema_2.ejercicios.ejercicio2;
+package cosecha_propia.tema_2.ejercicio2;
 /*  EJERCICIO TERMINADO
     Tomando como base el código del ejercicio anterior, haz que el programa nos indique que palabra está antes lexicográficamente.
 */
-class clase{
+class Palabras{
     String palabra1;
     String palabra2;
 

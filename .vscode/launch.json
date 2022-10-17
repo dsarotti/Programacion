@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "cosecha_propia.tema_2.ejercicio3.Main",
+            "projectName": "Programacion_df1e0b29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "cosecha_propia.tema_2.ejercicio4.Main",
+            "projectName": "Programacion_df1e0b29"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "cosecha_propia.tema_2.ejercicios.ejercicio1.Main",
             "projectName": "Programacion_df1e0b29"
         },

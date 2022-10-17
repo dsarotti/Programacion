@@ -1,8 +1,8 @@
-package cosecha_propia.tema_2.ejercicios.ejercicio1;
+package cosecha_propia.tema_2.ejercicio1;
 /*  EJERCICIO TERMINADO
     Escribe un programa que pida al usuario dos palabras por consola e indique si son iguales o disntintas.
 */
-class clase{
+class Palabras{
     String palabra1;
     String palabra2;
 
