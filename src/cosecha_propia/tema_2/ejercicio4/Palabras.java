@@ -27,7 +27,7 @@ class Palabras{
     }
 
     public void ordenar(){
-        Arrays.sort(this.palabras, ComparatorUtils.nullLowComparator(ComparatorUtils.NATURAL_COMPARATOR));
+        Arrays.sort(this.palabras, ComparatorUtils.nullLowComparator(null));
     }
 
     public String[] getPalabras(){

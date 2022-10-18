@@ -1,6 +1,6 @@
 package cosecha_propia.tema_2.EXTRA;
-import java.util.ArrayList;
 import java.io.Console;
+import java.util.ArrayList;
 import java.util.Scanner;
 
  /* 
@@ -74,14 +74,16 @@ public class Extra {
         * Si las comprobaciones son correctas se devuelve el índice introducido
         * Si no, se vuelve a pedir.
         */
-        
-        Scanner sc = new Scanner(System.in);
-        int i;
-        do {
-            i = sc.nextInt();
-            if (i<0) System.out.println("el indice debe ser positivo.");
-            if (i >= this.palabras.size()) System.out.println("el indice debe ser menor que " + this.palabras.size() );
-        } while ((i<0) || (i >= this.palabras.size()));
-        return i;
+
+        try (Scanner sc = new Scanner(System.in)) {
+            int i;
+            do {
+                i = sc.nextInt();
+                if (i<0) System.out.println("el indice debe ser positivo.");
+                if (i >= this.palabras.size()) System.out.println("el indice debe ser menor que " + this.palabras.size() );
+            } while ((i<0) || (i >= this.palabras.size()));
+            
+            return i;
+        }
     }
 }

@@ -6,7 +6,6 @@ import java.io.Console;
 
 public class Main{
     public static void main(String[] args) {
-        char[] data = {'c','a','d','e','n','a'};
         Alumno  alumno1 = new Alumno();
         Console c = System.console();
         //set edad

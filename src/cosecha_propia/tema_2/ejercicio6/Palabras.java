@@ -35,7 +35,7 @@ class Palabras{
 
     public static String[] copiaOrdena(String[] lista){
         String[] copia = Arrays.copyOf(lista,lista.length);
-        Arrays.sort(copia, ComparatorUtils.nullLowComparator(ComparatorUtils.NATURAL_COMPARATOR));
+        Arrays.sort(copia, ComparatorUtils.nullLowComparator(null));
         return copia;
     }
 }

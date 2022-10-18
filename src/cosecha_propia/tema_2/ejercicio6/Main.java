@@ -12,7 +12,12 @@ public class Main {
         objeto.rellenar();
         System.out.println("Relleno completado.");
         System.out.println("ordenando...");
-        
+       
+        System.out.println("Mostrando contenido original: ");
+        for (String cadena:objeto.getPalabras()){
+            if (cadena != null)
+            System.out.println(cadena);
+        }
 
         System.out.println("Mostrando contenido de copia ordenada: ");
         for (String cadena:Palabras.copiaOrdena(objeto.getPalabras())){
@@ -20,10 +25,6 @@ public class Main {
             System.out.println(cadena);
         }
 
-        System.out.println("Mostrando contenido original: ");
-        for (String cadena:objeto.getPalabras()){
-            if (cadena != null)
-            System.out.println(cadena);
-        }
+        
     }
 }
