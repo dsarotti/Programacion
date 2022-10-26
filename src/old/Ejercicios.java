@@ -21,7 +21,7 @@ public class Ejercicios {
         //convertir los argumentos a int
         int a = Integer.parseInt(i);
         int b = Integer.parseInt(l);
-
+        int c = Integer.max(a, b);
         System.out.println("Resultado de la suma = " + (a + b));
         System.out.println("Resultado de la resta = " + (a-b));
         System.out.println("Resultado de la multiplicacion = " + (a*b));
