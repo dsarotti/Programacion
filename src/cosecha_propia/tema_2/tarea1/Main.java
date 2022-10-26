@@ -6,7 +6,7 @@ public class Main {
         Console c = System.console();
         System.out.println("introduce una lista separada por comas :");
         lista.introducir(c.readLine());
-
+        
     }
     
 }
