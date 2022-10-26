@@ -25,7 +25,7 @@ public class Main {
             System.out.println("1) Filtrar.");
             System.out.println("2) Dividir.");
         do{    
-            op = pideInt();
+            op = pideInt(sc);
             if (op<1 || op >2) System.out.println("elige 1 o 2. ");
         }while (op<1 || op >2);
 
@@ -60,8 +60,7 @@ public class Main {
         }
     }
 
-    public static int pideInt(){
-        Scanner sc = new Scanner(System.in);
+    public static int pideInt(Scanner sc){
         int op=-1;
         try {
             op=sc.nextInt();
