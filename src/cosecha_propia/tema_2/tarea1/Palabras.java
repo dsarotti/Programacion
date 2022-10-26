@@ -14,26 +14,25 @@ public class Palabras {
 
     public String[] filtrar(String filtro){
         String res="";
-        char temp[];
-        char filtroChar[]=filtro.toCharArray();//pasamos el filtro a array de chars para comparar.
+        char tempChars[];
+        char filtroChars[]=filtro.toCharArray();//pasamos el filtro a array de chars para comparar.
         boolean trigger;
         for (int i = 0;i<this.lista.length;i++){ //recorremos todas las palabras.
             trigger=false;
-            temp=this.lista[i].toCharArray(); //alojamos temporalmente cada palabra en un array de Chars.
+            tempChars=this.lista[i].toCharArray(); //alojamos temporalmente cada palabra en un array de Chars.
             
-            if ((filtroChar.length<=temp.length) && (temp[0] == filtroChar[0]) ){   //si el filtro cabe en la palabra y
+            if ((filtroChars.length<=tempChars.length) && (tempChars[0] == filtroChars[0]) ){   //si el filtro cabe en la palabra y
                 trigger=true; 
-                for(int n = 1 ;(n < filtroChar.length) || (!trigger);n++){//recorremos la palabra comparando con el filtro. 
-                    if (temp[n]!=filtroChar[n]){    //si en algun momento el filtro no concuerda se pasa trigger a false.
+                for(int n = 1 ;(n < filtroChars.length) || (!trigger);n++){//recorremos la palabra comparando con el filtro. 
+                    if (tempChars[n]!=filtroChars[n]){    //si en algun momento el filtro no concuerda se pasa trigger a false.
                         trigger=false;              //lo que provoca que se pare el bucle para esa palabra y no se añada a la lista.
                     }
                 }
                 if (trigger){
-                res=res+","+temp.toString();
+                res=res+","+tempChars.toString();
                 }
             }
         }
         return res.split(",");
     }
-    
 }
