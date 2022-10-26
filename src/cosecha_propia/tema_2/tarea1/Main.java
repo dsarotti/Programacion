@@ -3,6 +3,9 @@ import java.io.Console;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        /*
+         * genera el menú desde el que se maneja el programa
+         */
         Scanner sc = new Scanner(System.in);
         Console c = System.console();
         Palabras lista = new Palabras();
@@ -26,7 +29,7 @@ public class Main {
             System.out.println("2) Dividir.");
         do{    
             op = pideInt(sc);
-            if (op<1 || op >2) System.out.println("elige 1 o 2. ");
+            if (op<1 || op >2) System.out.println("Selecciona la opcion 1 o 2. ");
         }while (op<1 || op >2);
 
         switch (op) {

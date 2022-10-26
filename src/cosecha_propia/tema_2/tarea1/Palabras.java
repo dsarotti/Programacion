@@ -53,7 +53,7 @@ public class Palabras {
 
     public String[][] dividir(String divisor){
         /* 
-         * ordena la lista de este objeto y luego la divide por la primera .
+         * ordena la lista de este objeto y luego la divide por la primera
          * ocurrencia del divisor que recibe como parámetro de entrada
          * devuelve un array de dos dimensiones con dos posiciones en la primera
          * dimensión y las que sean necesarias en la segunda dimensión
@@ -64,7 +64,7 @@ public class Palabras {
         Console c = System.console();
 
         if (clave<0) do {
-            System.out.println("esa palabra no existe en la lista, prueba con otra: ");
+            System.out.println("esa palabra no existe en la lista,a prueba con otra: ");
             clave = Arrays.binarySearch(temp, c.readLine());
         }while (clave <0); 
         
