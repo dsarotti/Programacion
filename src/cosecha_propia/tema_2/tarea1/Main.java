@@ -1,6 +1,7 @@
 package cosecha_propia.tema_2.tarea1;
 import java.io.Console;
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         /*
