@@ -1,8 +1,6 @@
 package cosecha_propia.tema_2.tarea1;
 import java.io.Console;
 import java.util.Scanner;
-
-import javax.naming.event.NamingExceptionEvent;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -28,6 +26,7 @@ public class Main {
             System.out.println("2) Dividir.");
         do{    
             op = pideInt();
+            if (op<1 || op >2) System.out.println("elige 1 o 2. ");
         }while (op<1 || op >2);
 
         switch (op) {
