@@ -1,12 +1,13 @@
 package cosecha_propia.tema_2.tarea1;
 
+
 import java.io.Console;
 import java.util.Arrays;
 
 public class Palabras {
     private String[] lista = null;
 
-    public String[] getLista() {
+    public String[] getLista()  {
         return this.lista;
     }
 
