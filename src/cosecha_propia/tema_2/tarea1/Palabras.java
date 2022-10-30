@@ -1,13 +1,11 @@
 package cosecha_propia.tema_2.tarea1;
 
-
-import java.io.Console;
 import java.util.Arrays;
 
 public class Palabras {
     private String[] lista = null;
 
-    public String[] getLista()  {
+    public String[] getLista() {
         return this.lista;
     }
 
@@ -66,7 +64,7 @@ public class Palabras {
 
     public String[][] dividir(String divisor) {
         /*
-         * ordena la lista de este objeto y luego la divide por el punto de 
+         * ordena la lista de este objeto y luego la divide por el punto de
          * inserción del divisor que recibe como parámetro de entrada
          * devuelve un array de dos dimensiones con dos posiciones en la primera
          * dimensión y las que sean necesarias en la segunda dimensión
@@ -74,7 +72,6 @@ public class Palabras {
         String[] temp = this.lista.clone(); // clonamos para no modificar el array original.
         Arrays.sort(temp); // ordenamos la copia.
         int clave = Arrays.binarySearch(temp, divisor); // obtenemos el índice por el que dividir el array.
-
 
         if (clave < 0) {
             clave = Math.abs(Arrays.binarySearch(temp, divisor)) - 1;
