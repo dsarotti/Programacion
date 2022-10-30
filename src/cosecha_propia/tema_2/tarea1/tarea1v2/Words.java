@@ -77,7 +77,7 @@ public class Words {
         return temp;
     }
 
-    private static void filter(String[] words) {
+    public static void filter(String[] words) {
         /**
          * Recibe una Array de Strings @param words y pide al usuario que introduzca un
          * filtro.
@@ -96,7 +96,7 @@ public class Words {
         }
     }
 
-    private static void divide(String[] words) {
+    public static void divide(String[] words) {
         /**
          * Recibe un Array de Strings. Solicita al usuario que introduzca una cadena.
          * Ordena el array lexicográficamente y muestra las palabras anteriores y
