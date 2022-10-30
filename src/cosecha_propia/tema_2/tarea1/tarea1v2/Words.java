@@ -109,12 +109,10 @@ public class Words {
             div = c.readLine();
         } while (div.isEmpty() || div.isBlank());
 
-        if (Arrays.binarySearch(ordered, div) < 0) {
+        key = Arrays.binarySearch(ordered, div);
+        if (key < 0) {
             key = Math.abs(Arrays.binarySearch(ordered, div)) - 1;
-        } else {
-            key = Arrays.binarySearch(ordered, div);
         }
-
         System.out.println("Palabras anteriores a \"" + div + "\": ");
         for (int i = 0; i < key; i++) {
             System.out.println(ordered[i]);
