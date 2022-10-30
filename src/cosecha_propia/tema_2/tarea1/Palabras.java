@@ -71,7 +71,6 @@ public class Palabras {
          * devuelve un array de dos dimensiones con dos posiciones en la primera
          * dimensión y las que sean necesarias en la segunda dimensión
          */
-        Console c = System.console();
         String[] temp = this.lista.clone(); // clonamos para no modificar el array original.
         Arrays.sort(temp); // ordenamos la copia.
         int clave = Arrays.binarySearch(temp, divisor); // obtenemos el índice por el que dividir el array.
