@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Words",
+            "request": "launch",
+            "mainClass": "cosecha_propia.tema_2.tarea1.tarea1v2.Words",
+            "projectName": "Programacion_e17d93f7"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "cosecha_propia.tema_2.tarea1.Main",
