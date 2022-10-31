@@ -83,15 +83,17 @@ public class Words {
          * filtro.
          * Busca palabras que empiecen por dicho filtro dentro del array y las muestra.
          */
+        String[] temp = words.clone();
+        Arrays.sort(temp);
         Console c = System.console();
         String filter;
         System.out.print("Introduce algo por lo que filtrar: ");
         do {
             filter = c.readLine();
         } while (filter.isEmpty() || filter.isBlank());
-        for (int i = 0; i < words.length; i++) {
-            if (words[i].startsWith(filter)) {
-                System.out.println(words[i]);
+        for (int i = 0; i < temp.length; i++) {
+            if (temp[i].startsWith(filter)) {
+                System.out.println(temp[i]);
             }
         }
     }
@@ -107,8 +109,8 @@ public class Words {
         Arrays.sort(ordered);
         String div;
         int key;
-        System.out.println("Introduce una cadena por la que dividir: ");
         do {
+            System.out.println("Introduce una cadena por la que dividir: ");
             div = c.readLine();
         } while (div.isEmpty() || div.isBlank());
 

@@ -30,7 +30,8 @@ public class Palabras {
          * cumplan el filtro.
          * si el parámetro filtro esta vacío se devuelve una lista vacía.
          */
-        String res = "";
+        String resString = "";
+        String[] resArray;
         if (this.lista != null && !(filtro.isEmpty())) {
             char[] tempChars;
             char[] filtroChars = filtro.toCharArray();// pasamos el filtro a array de chars para comparar.
@@ -53,13 +54,15 @@ public class Palabras {
                         }
                     }
                     if (sw)
-                        res = res + "," + this.lista[i]; // si al recorrer la palabra sw sigue siendo true, el filtro
+                        resString = resString + "," + this.lista[i]; // si al recorrer la palabra sw sigue siendo true, el filtro
                                                          // concuerda, se añade la palabra.
                     tempChars.toString();
                 }
             }
         }
-        return res.split(",");
+        resArray=resString.split(",");
+        Arrays.sort(resArray);
+        return resArray;
     }
 
     public String[][] dividir(String divisor) {
@@ -77,17 +80,17 @@ public class Palabras {
             clave = Math.abs(Arrays.binarySearch(temp, divisor)) - 1;
         }
 
-        String[][] res = new String[2][];
-        res[0] = new String[clave];
-        res[1] = new String[temp.length - clave];
+        String[][] resString = new String[2][];
+        resString[0] = new String[clave];
+        resString[1] = new String[temp.length - clave];
 
         for (int i = 0; i < temp.length; i++) {
             if (i < clave) {
-                res[0][i] = temp[i];
+                resString[0][i] = temp[i];
             } else {
-                res[1][i - clave] = temp[i];
+                resString[1][i - clave] = temp[i];
             }
         }
-        return res;
+        return resString;
     }
 }
