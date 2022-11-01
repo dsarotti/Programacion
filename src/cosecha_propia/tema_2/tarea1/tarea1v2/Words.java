@@ -84,7 +84,7 @@ public class Words {
          * Busca palabras que empiecen por dicho filtro dentro del array y las muestra.
          */
         String[] temp = words.clone();
-        Arrays.sort(temp);
+        Arrays.sort(temp, String.CASE_INSENSITIVE_ORDER);
         Console c = System.console();
         String filter;
         System.out.print("Introduce algo por lo que filtrar: ");

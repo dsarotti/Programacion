@@ -62,7 +62,7 @@ public class Palabras {
             }
         }
         resArray = resString.split(",");
-        Arrays.sort(resArray);
+        Arrays.sort(resArray, String.CASE_INSENSITIVE_ORDER);
         return resArray;
     }
 
