@@ -54,13 +54,14 @@ public class Palabras {
                         }
                     }
                     if (sw)
-                        resString = resString + "," + this.lista[i]; // si al recorrer la palabra sw sigue siendo true, el filtro
-                                                         // concuerda, se añade la palabra.
+                        resString = resString + "," + this.lista[i]; // si al recorrer la palabra sw sigue siendo true,
+                                                                     // el filtro
+                    // concuerda, se añade la palabra.
                     tempChars.toString();
                 }
             }
         }
-        resArray=resString.split(",");
+        resArray = resString.split(",");
         Arrays.sort(resArray);
         return resArray;
     }
@@ -73,11 +74,11 @@ public class Palabras {
          * dimensión y las que sean necesarias en la segunda dimensión
          */
         String[] temp = this.lista.clone(); // clonamos para no modificar el array original.
-        Arrays.sort(temp); // ordenamos la copia.
-        int clave = Arrays.binarySearch(temp, divisor); // obtenemos el índice por el que dividir el array.
+        Arrays.sort(temp, String.CASE_INSENSITIVE_ORDER); // ordenamos la copia.
+        int clave = Arrays.binarySearch(temp, divisor, String.CASE_INSENSITIVE_ORDER); // obtenemos el índice por el que dividir el array.
 
         if (clave < 0) {
-            clave = Math.abs(Arrays.binarySearch(temp, divisor)) - 1;
+            clave = Math.abs(Arrays.binarySearch(temp, divisor, String.CASE_INSENSITIVE_ORDER)) - 1;
         }
 
         String[][] resString = new String[2][];

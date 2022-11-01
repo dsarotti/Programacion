@@ -106,7 +106,7 @@ public class Words {
          */
         Console c = System.console();
         String[] ordered = words.clone();
-        Arrays.sort(ordered);
+        Arrays.sort(ordered, String.CASE_INSENSITIVE_ORDER);
         String div;
         int key;
         do {
@@ -114,9 +114,9 @@ public class Words {
             div = c.readLine();
         } while (div.isEmpty() || div.isBlank());
 
-        key = Arrays.binarySearch(ordered, div);
+        key = Arrays.binarySearch(ordered, div, String.CASE_INSENSITIVE_ORDER);
         if (key < 0) {
-            key = Math.abs(Arrays.binarySearch(ordered, div)) - 1;
+            key = Math.abs(Arrays.binarySearch(ordered, div, String.CASE_INSENSITIVE_ORDER)) - 1;
         }
         System.out.println("Palabras anteriores a \"" + div + "\": ");
         for (int i = 0; i < key; i++) {
