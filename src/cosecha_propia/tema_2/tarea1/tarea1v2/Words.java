@@ -8,6 +8,12 @@ public class Words {
      * Esta es otra versión de la tarea 1 en la que hago más uso de librearías ya
      * existentes y métodos estáticos.
      * De esta forma el código queda más simplificado y compacto.
+     * A continuación se propone una lista de palabras de longitud significativa
+     * para hacer pruebas:
+       aaa, aab, aac, aba, abb, abc, aca, acb, acc, baa, bab, bac, bba, bbb, bbc,
+       bca, bcb, bcc, caa, cab, cac, cba, cbb, cbc, cca, ccb, ccc, AAA, AAB, AAC,
+       ABA, ABB, ABC, ACA, ACB, ACC, BAA, BAB, BAC, BBA, BBB, BBC, BCA, BCB, BCC,
+       CAA, CAB, CAC, CBA, CBB, CBC, CCA, CCB, CCC
      */
     public static void main(String[] args) {
 
