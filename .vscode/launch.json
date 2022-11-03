@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Tarea1",
+            "request": "launch",
+            "mainClass": "copiando_al_profesor.tarea1.Tarea1",
+            "projectName": "Programacion_9dae3ba7"
+        },
+        {
+            "type": "java",
             "name": "Launch pruebas",
             "request": "launch",
             "mainClass": "cosecha_propia.tema_2.tarea1.tarea1v2.pruebas",
