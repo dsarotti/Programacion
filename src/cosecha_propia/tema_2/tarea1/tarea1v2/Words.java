@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class Words {
     /*
+     * Dante Sarotti
      * Esta es otra versión de la tarea 1 en la que hago más uso de librearías ya
      * existentes y métodos estáticos.
      * De esta forma el código queda más simplificado y compacto.
@@ -43,6 +44,7 @@ public class Words {
                     break;
             }
         } while (op != 3);
+        System.out.println("Saliendo... ");
     }
 
     public static String[] fill() {
@@ -67,7 +69,7 @@ public class Words {
 
     public static int selectOption() {
         /*
-         * Pide al usuario que introduzca una opción. Sólo admite números del 1 al 3.
+         * Solicita al usuario que introduzca una opción. Sólo admite números del 1 al 3.
          */
         Console c = System.console();
         int temp = -1;
@@ -85,9 +87,9 @@ public class Words {
 
     public static void filter(String[] words) {
         /**
-         * Recibe una Array de Strings @param words y pide al usuario que introduzca un
-         * filtro.
-         * Busca palabras que empiecen por dicho filtro dentro del array y las muestra.
+         * Recibe un Array de Strings y solicita al usuario que introduzca un filtro.
+         * Busca palabras que empiecen por dicho filtro dentro del array y las muestra
+         * por orden lexicográfico
          */
         String[] temp = words.clone();
         Arrays.sort(temp, String.CASE_INSENSITIVE_ORDER);
