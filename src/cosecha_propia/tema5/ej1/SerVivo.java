@@ -8,6 +8,7 @@ public abstract class SerVivo {
     public SerVivo(String nombreCientifico, String nombreComun, int altura){
         this.nombreCientifico=nombreCientifico;
         this.nombreComun=nombreComun;
+        this.altura=altura;
     }
 
     public int getAltura() {
