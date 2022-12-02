@@ -10,10 +10,11 @@ public class NumerosE4 {
         this.valores = valores.clone();
         Arrays.sort(this.valores);
     }
-    public int longitud(){
-        return valores.length;
 
+    public int longitud(){
+        return valores.length;   
     }
+    
     public void insertar (int vlaor, int posicion){
         valores[valores.length];
         try {
